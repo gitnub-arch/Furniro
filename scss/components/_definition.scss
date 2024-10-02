@@ -1,0 +1,38 @@
+.definition-lists {
+    &__buttons {
+        display: flex;
+        cursor: pointer;
+        gap: 38px;
+    }
+
+    &__button-prev-text,
+    &__button-text,
+    &__button-next-text {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        color: black;
+        background-color: #F9F1E7;
+        border-radius: 10px;
+        padding: 15px 28px;
+        transition: 0.3s;
+
+        &.active {
+            background-color: #B88E2F;
+            color: #fff;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__button-prev-text,
+    &__button-next-text {
+        padding: 15px 28px;
+    }
+}

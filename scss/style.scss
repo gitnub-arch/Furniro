@@ -1,0 +1,26 @@
+@import "./base";
+//переменный цветов
+@import './variables';
+
+// Компоненты сайта
+@import "./components/buttons";
+@import "./components/product";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/advantages";
+@import "./components/definition";
+@import "./components/cart-modal";
+
+// Секции сайта
+@import './sections/hero';
+@import "./sections/range";
+@import "./sections/our-products";
+@import "./sections/breadcrumbs";
+@import './sections/shop-products';
+@import "./sections/recent-posts";
+@import "./sections/prod-info";
+@import "./sections/form";
+@import './sections/cart';
+
+// Страницы сайта
+@import "./pages/blog";

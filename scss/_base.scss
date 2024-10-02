@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import './vendors/reset';
+@import './vendors/menu';
+@import './mixins/breakpoints';
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    @media (max-width: 560px) {
+        padding: 0 20px;
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+
+    &.hide-overlow {
+        overflow: hidden;
+        padding-right: 18px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.col-5 {
+    width: 41.66%;
+
+    @include mobile {
+        width: 100%;
+    }
+}

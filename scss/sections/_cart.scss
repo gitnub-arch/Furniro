@@ -1,0 +1,102 @@
+.cart{
+  padding-bottom: 20px;
+
+  &__row {
+    width: 100%;
+    height: 100%;
+    padding-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+
+  &__column {
+    width: 60%;
+    max-height: 40%;
+  }
+
+  &__info-item {
+    background-color: $light_beige_background;
+  }
+
+  &__tab {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    color: $text_color_gray;
+  }
+
+  &__img{
+    background: $light_beige_background;
+    border-radius: 10px;
+  }
+
+  &__checkout{
+    padding: 14px 59px;
+    background-color: $light_beige_background;
+    border-radius: 15px;
+    margin-bottom: 50px;
+  }
+
+  &__total-column{
+    background-color: $light_beige_background;
+    max-width: 393px;
+    max-height: 390px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__price-info{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-bottom: 31px;
+    padding-top: 61px;
+  }
+
+  &__final-info{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-bottom: 42px;
+    }
+
+  &__total-title{
+    padding: 15px 118px 0  96px ;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+
+  &__price-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__price{
+    font-size: 16px;
+    font-weight: 400;
+    color: $text_color_gray;
+  }
+  
+  &__final-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__final-price{
+   font-size: 20px;
+   font-weight: 500;
+   color: $text_color_beige;
+  }
+
+}

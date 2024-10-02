@@ -1,0 +1,149 @@
+.header {
+    padding: 30px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        gap: 75px;
+    }
+
+    &__link {
+        color: #000000;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #000;
+            border-radius: 3px;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 560px) {
+        display: none;
+    }
+}
+
+.actions {
+    &__list {
+        display: flex;
+        gap: 45px;
+    }
+
+    &__item {
+        transition: 0.3s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    @media (max-width: 560px) {
+        display: none;
+    }
+}
+
+.mobile-menu {
+    display: none;
+
+    @media (max-width: 560px) {
+        display: block;
+    }
+}
+
+.mobile-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    &__list {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            order: 1;
+        }
+
+        &:last-child {
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        color: #000000;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        display: inline-flex;
+        align-items: center;
+
+        img {
+            margin-right: 15px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #000;
+            border-radius: 3px;
+            transition: 0.2s;
+        }
+    }
+}

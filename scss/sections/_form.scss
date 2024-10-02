@@ -1,0 +1,139 @@
+.form {
+  padding: 100px 0;
+
+  &__title,
+  &__desc {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  &__desc {
+    font-size: 16px;
+    margin: auto;
+    max-width: 644px;
+    color: #9f9f9f;
+    line-height: 1.5;
+  }
+
+  .adress-icon {
+    margin-bottom: 50px;
+  }
+
+  .phone-icon {
+    margin-bottom: 55px;
+  }
+
+  .clock-icon {
+    margin-bottom: 58px;
+  }
+
+  .row {
+    display: flex;
+    gap: 130px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  .column-information {
+    margin-top: 119px;
+
+    @include mobile {
+      margin-top: 50px;
+    }
+  }
+
+  .adress {
+    display: flex;
+    gap: 30px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      display: block;
+      line-height: 1.5;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .phone {
+    display: flex;
+    gap: 30px;
+    margin-top: 64px;
+
+    &__icon {
+      margin-bottom: 30px;
+    }
+  }
+
+  .clock {
+    display: flex;
+    gap: 30px;
+    margin-top: 64px;
+  }
+
+  .column-input {
+    margin-top: 119px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @include mobile {
+      margin-top: 0;
+    }
+  }
+
+  .input-name {
+    &__input {
+      margin-top: 22px;
+      padding: 30px 25px;
+      width: 100%;
+      border: 1px solid #9F9F9F;
+      border-radius: 10px;
+      color: #9F9F9F;
+      box-sizing: border-box;
+
+      @include mobile {
+        margin-top: 10px;
+        padding: 20px 15px;
+      }
+    }
+  }
+
+  .input-name {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  #input {
+    margin-top: 22px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #9F9F9F;
+    border-radius: 10px;
+    color: #9F9F9F;
+    min-height: 120px;
+
+    @include mobile {
+      margin-top: 10px;
+      padding: 20px 15px;
+    }
+  }
+
+  .form__bottom {
+    align-self: baseline;
+  }
+}

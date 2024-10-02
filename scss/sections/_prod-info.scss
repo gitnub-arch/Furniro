@@ -1,0 +1,64 @@
+.prod-info {
+  padding-top: 50px;
+  padding-bottom: 65px;
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    background: none;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    margin-right: 50px;
+    margin-bottom: 37px;
+    cursor: pointer;
+    color: #9f9f9f; /* серый цвет по умолчанию для всех кнопок */
+  }
+
+  &__btn.active {
+    color: #020202;
+    font-weight: 500;
+  }
+
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__top-txt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #9f9f9f;
+  }
+
+  &__txt {
+    margin: 30px 0 36px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__img {
+    padding-right: 30px;
+  }
+
+  .block {
+    display: none;
+    padding: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  .active {
+    display: block;
+  }
+}

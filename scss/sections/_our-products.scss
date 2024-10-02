@@ -1,0 +1,26 @@
+.our-products {
+  padding-bottom: 150px;
+
+  &__title {
+    padding-top: 56px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__row {
+    padding-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  @media (max-width: 560px) {
+    padding-bottom: 75px;
+
+    &__row {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+}

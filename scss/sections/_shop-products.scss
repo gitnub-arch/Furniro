@@ -1,0 +1,9 @@
+.shop-products {
+    padding: 60px 0 85px;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
