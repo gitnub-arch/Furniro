@@ -1,0 +1,27 @@
+section.cart 
+    .container
+        .cart__row
+          .cart__column
+            .cart__info-item
+               ul.cart__tab
+                li.cart__title Image
+                li.cart__name Product
+                li.cart__price Price
+                li.cart__count Quantity
+                li.cart__subtotal Subtotal
+            .cart__item
+              img.cart__img(src='./img/sofa_item.png' alt='sofa')
+              span.cart__item-title Assaf sofa
+              span.cart__item-price Rs. 250,000.00
+              span.cart__item-count 1
+              span.cart__item-subtotal Rs. 250,000.00
+              img.cart__delete(src='./img/delete.svg' alt='delete cart')
+          .cart__total-column
+              h1.cart__total-title Cart Totals
+              .cart__price-info
+                 span.cart__price-title Subtotal
+                 span.cart__price Rs. 250,000.00
+              .cart__final-info
+                 span.cart__final-title Total
+                 span.cart__final-price Rs. 250,000.00
+              button.cart__checkout Check Out 

@@ -1,0 +1,72 @@
+header.header
+    .container
+        .header__row
+
+            .header__logo.logo
+                a.logo__link(href="./index.html")
+                    img.logo__image(src="../../../img/logo.png" alt="Furniro")
+
+
+            nav.header__nav.nav
+                ul.nav__list
+                    li.nav__item 
+                        a.nav__link(href="./index.html") Home
+                    li.nav__item 
+                        a.nav__link(href="./shop.html") Shop
+                    li.nav__item 
+                        a.nav__link(href="./blog.html") About
+                    li.nav__item 
+                        a.nav__link(href="./contact.html") Contact
+
+
+
+            .header__actions.actions
+                ul.actions__list
+                    li.actions__item
+                        a(href="#").actions__link
+                            img(src="../../../img/account-alert.svg" alt="Account").actions__icon
+                    li.actions__item
+                        a(href="#").actions__link
+                            img(src="../../../img/search.svg" alt="search").actions__icon
+                    li.actions__item
+                        a(href="#").actions__link
+                            img(src="../../../img/heart.svg" alt="heart").actions__icon
+                    li.actions__item.cart-modal-icon
+                        a(href="#").actions__link
+                            img(src="../../../img/cart.svg" alt="cart").actions__icon
+
+            nav.mobile-nav
+                a.logo__link(href="./index.html")
+                    img.logo__image(src="../../../img/logo.png" alt="Furniro")
+                ul.mobile-nav__list
+                    li.mobile-nav__item 
+                        a.mobile-nav__link(href="./index.html") Home
+                    li.mobile-nav__item 
+                        a.mobile-nav__link(href="./shop.html") Shop
+                    li.mobile-nav__item 
+                        a.mobile-nav__link(href="./blog.html") About
+                    li.mobile-nav__item 
+                        a.mobile-nav__link(href="./contact.html") Contact
+                    li.mobile-nav__item
+                        a(href="#").mobile-nav__link
+                            img(src="../../../img/account-alert.svg" alt="Account").actions__icon
+                            span Account
+                    li.mobile-nav__item
+                        a(href="#").mobile-nav__link
+                            img(src="../../../img/search.svg" alt="search").actions__icon
+                            span Search
+                    li.mobile-nav__item
+                        a(href="#").mobile-nav__link
+                            img(src="../../../img/heart.svg" alt="heart").actions__icon
+                            span Liked
+                    li.mobile-nav__item
+                        a(href="#").mobile-nav__link.cart-modal-icon
+                            img(src="../../../img/cart.svg" alt="cart").actions__icon
+                            span Cart
+
+            .menu.mobile-menu
+                .menu__line 
+                .menu__line 
+                .menu__line 
+
+    script(src="./js/menu.js")

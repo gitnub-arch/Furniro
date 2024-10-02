@@ -1,0 +1,14 @@
+extends ../layouts/layout.pug
+
+block content
+    main(data-barba="container" data-barba-namespace="blog")
+        include ../mixins/breadcrumbs.pug
+        +breadcrumbs('Blog', 'Blog')
+        .container.blog-container
+            section.posts
+                include ../components/post.pug
+                include ../components/post.pug
+                include ../components/post.pug
+                include ../components/definition.pug
+            include ../components/recent-posts.pug
+        include ../components/advantages.pug

@@ -1,0 +1,9 @@
+extends ../layouts/layout.pug
+
+block content
+    main(data-barba="container" data-barba-namespace="shop")
+        include ../mixins/breadcrumbs.pug
+        +breadcrumbs('Shop', 'Shop')
+        include ../sections/shop-products.pug
+        include ../components/advantages.pug
+        

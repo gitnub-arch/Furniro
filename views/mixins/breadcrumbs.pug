@@ -1,0 +1,11 @@
+mixin breadcrumbs(title, currentPage)
+    section.breadcrumbs
+        .container
+            .breadcrumbs__content 
+                img.breadcrumbs__img(src='../img/meubellogo.svg', alt='logo')
+                h1.breadcrumbs__title=title
+                .breadcrumbs__pages
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__prev-page Home
+                        img.breadcrumbs__img(src='../img/shop_arrow.svg', alt='arrow')
+                        li.breadcrumbs__page=currentPage

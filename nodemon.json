@@ -1,0 +1,10 @@
+{
+    "watch": [
+        "js, views, img, scss"
+    ],
+    "ignore": [
+        "public"
+    ],
+    "ext": "js,pug,scss",
+    "exec": "node js/index.js"
+}
